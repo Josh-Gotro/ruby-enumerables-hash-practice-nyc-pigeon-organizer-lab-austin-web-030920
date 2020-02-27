@@ -13,7 +13,8 @@ data.map do |key, value|
       if !new[name][key]
         new[name][key] = []
       end
-      new[:name][:key]
+      new[name][key]
+      binding.pry
     end
   end
 end
