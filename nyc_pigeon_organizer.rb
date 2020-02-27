@@ -16,4 +16,5 @@ data.map do |key, value|
     end
   end
 end
+new
 end
