@@ -12,8 +12,6 @@ def list_of_names(hash)
 names = []
 names = hash[:gender].values_at(:male, :female)
 names.flatten
-puts "++++++++++++++++++++++++++++++++++++"
-puts names
 end
 
 def assign_color (hash)
