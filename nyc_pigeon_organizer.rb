@@ -7,7 +7,12 @@ new = {}
 data.map do |key, value| 
   value.map do |color, names| 
     names.map do |name| 
-      new.key
+      if !new[name]
+        new[name] = {}
+      end
+      if !new[name][key]
+        new[name][key] = []
+      end
     end
   end
 end
