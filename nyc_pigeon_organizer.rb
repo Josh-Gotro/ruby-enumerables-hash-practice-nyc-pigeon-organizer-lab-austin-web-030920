@@ -16,7 +16,21 @@ end
 
 def assign_color (hash)
   color = {}
-end
+  n = list_of_names(hash)
+  c = hash[:color].keys
+  i = 0 
+  while i < c.length
+  ii = 0 
+    while ii < n.length 
+      if hash[:color][c[i]].include?(n[ii])
+        color = {n[ii] => hash[:color][c[i]]}
+      end
+      ii += 1
+    end
+    i += 1
+  end
+  hash[:color][c]
+  end
 
 def assign_gender(hash)
   gender = {}
