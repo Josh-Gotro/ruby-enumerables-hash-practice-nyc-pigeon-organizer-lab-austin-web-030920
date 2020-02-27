@@ -5,7 +5,7 @@ require 'pry'
 def nyc_pigeon_organizer(data)
 new = {}
 data.map do |key, value| 
-  binding.pry
+  # value #=> 
   value.map do |n_value, names| 
     names.map do |name| 
       if !new[name]
