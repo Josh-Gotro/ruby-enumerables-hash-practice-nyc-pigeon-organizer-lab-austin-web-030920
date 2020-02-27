@@ -7,8 +7,9 @@ new = {}
 data.map do |key, value| 
   # value #=> {:purple=>["Theo", "Peter Jr.", "Lucky"], etc...
   value.map do |n_value, names| 
-    binding.pry
+    # names #=> ["Theo", "Peter Jr.", "Lucky"]
     names.map do |name| 
+      binding.pry
       if !new[name]
         new[name] = {}
       end
