@@ -9,7 +9,7 @@ data.map do |key, value|
   value.map do |n_value, names| 
     # names #=> ["Theo", "Peter Jr.", "Lucky"]
     names.map do |name| 
-      binding.pry
+      # name #=> "Theo"
       if !new[name]
         new[name] = {}
       end
