@@ -3,9 +3,8 @@ require 'pp'
 def nyc_pigeon_organizer(data)
 pigeon_by_name = {}
 pigeon_name_array = list_of_names(data)
-
 pigeon_by_name=Hash[pigeon_name_array.map {|key, value|[key, value]}]
-pigeon_by_name
+
 end
 
 def list_of_names(hash)
