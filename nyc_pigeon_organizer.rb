@@ -29,7 +29,7 @@ def assign_color (hash)
     end
     i += 1
   end
-  hash[:color][c]
+  color
   end
 
 def assign_gender(hash)
