@@ -14,7 +14,6 @@ data.map do |key, value|
         new[name][key] = []
       end
       new[name][key] << n_value.to_s
-      
     end
   end
 end
